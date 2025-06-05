@@ -11,7 +11,7 @@ import (
 )
 
 // Meter is a global meter instance
-var Meter = otel.GetMeterProvider().Meter("o11y-wolt")
+var Meter = otel.GetMeterProvider().Meter("geoip-meter")
 
 // Setup initializes the OpenTelemetry SDK with the given configuration
 func Setup(ctx context.Context, confFlag string) (func(context.Context) error, error) {
